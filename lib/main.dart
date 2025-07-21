@@ -1,5 +1,6 @@
-import 'package:day_two/loginscreen.dart';
-import 'package:day_two/loginscreencontent.dart';
+// import 'package:day_two/loginscreen.dart';
+// import 'package:day_two/loginscreencontent.dart';
+import 'package:day_two/start_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Loginscreen(child: Loginscreencontent(),) ,
-    
+      // home: Loginscreen(child: Loginscreencontent(),) ,
+    home: StrartPage(),
     );
   }
 }
