@@ -46,8 +46,15 @@ This is a simple Flutter project that demonstrates basic navigation and screen s
 ---
 
 ### 📸 Screenshots:
-![start](assets/images/startpage.png)
-![login](assets/images/login.png)
-![otp](assets/images/otp.png)
-![listnumbers](assets/images/listnumbers.png)
+<h3>🏠 Start Page</h3>
+<img src="assets/images/startpage.png" width="300"/>
+
+<h3>🔐 Login Page</h3>
+<img src="assets/images/login.png" width="300"/>
+
+<h3>🔢 OTP Page</h3>
+<img src="assets/images/otp.png" width="300"/>
+
+<h3>📋 Numbers Page</h3>
+<img src="assets/images/numberspage.png" width="300"/>
 
