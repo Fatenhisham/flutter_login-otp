@@ -1,11 +1,8 @@
-import 'package:day_two/loginscreen.dart';
-import 'package:day_two/loginscreencontent.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const StrartPage());
 }
-
 class StrartPage extends StatelessWidget {
   const StrartPage({super.key});
 
@@ -16,10 +13,7 @@ class StrartPage extends StatelessWidget {
       home: Scaffold(
         body: GestureDetector(
           onTap: (){
-             Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Loginscreen(child: Loginscreencontent(),) ),
-                );
+            Navigator.of(context).pushNamed('loginpage') ; 
           },
           child: Container( 
             width: double.infinity,
@@ -30,10 +24,10 @@ class StrartPage extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            child: Text('') ,
-          
+           
           ),
         ),
+          
       ),
     );
   }

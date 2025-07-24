@@ -1,9 +1,6 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
-
-void main() {
-  runApp(const OtpContent());
-}
 
 class OtpContent extends StatelessWidget {
   const OtpContent({super.key});
@@ -46,7 +43,9 @@ class OtpContent extends StatelessWidget {
         ),
         SizedBox(height: 30),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+             Navigator.of(context).pushNamed('numberspage');
+          },
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.white,
             foregroundColor: Colors.deepPurple,
@@ -56,7 +55,23 @@ class OtpContent extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          child: Text('تأكيد',style: TextStyle(fontSize: 20),),
+          child: Text('تأكيد', style: TextStyle(fontSize: 20)),
+        ),
+
+        SizedBox(height: 60),
+        ElevatedButton(
+          onPressed:
+              () => Navigator.of(context).pushNamed('loginpage'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.deepPurple,
+            elevation: 3,
+            padding: EdgeInsets.symmetric(horizontal: 80, vertical: 10),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+          child: Text('رجوع', style: TextStyle(fontSize: 20)),
         ),
       ],
     );

@@ -1,4 +1,4 @@
-import 'package:day_two/otp_page.dart';
+// import 'package:day_two/otp_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -53,10 +53,11 @@ class Loginscreencontent extends StatelessWidget {
 
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => OtpPage()),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => OtpPage()),
+                // );
+                Navigator.of(context).pushNamed('otppage');
               },
               child: Text(
                 'هل نسيت كلمه المرور؟           ',
@@ -66,7 +67,9 @@ class Loginscreencontent extends StatelessWidget {
 
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('numberspage');
+              },
               child: Text(
                 'تسجيل الدخول',
                 style: TextStyle(color: Color(0xff1380A5), fontSize: 20),
@@ -93,6 +96,16 @@ class Loginscreencontent extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('startpage');
+              },
+              child: Text(
+                ' رجوع',
+                style: TextStyle(color: Color(0xff1380A5), fontSize: 20),
+              ),
             ),
           ],
         ),

@@ -1,4 +1,3 @@
-
 import 'package:day_two/loginscreen.dart';
 import 'package:day_two/otp_content.dart';
 import 'package:flutter/material.dart';

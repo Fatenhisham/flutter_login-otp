@@ -11,6 +11,7 @@ class Loginscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('AppBar',style: TextStyle(color: Colors.white),),backgroundColor:Color(0xff1380A5),),
       body: Align(
         alignment: Alignment.bottomCenter,
         child: Container(
